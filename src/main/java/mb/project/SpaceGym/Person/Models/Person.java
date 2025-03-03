@@ -11,13 +11,19 @@ public class Person {
     private long personId;
 
     private String name;
+    private int age;
+    private float kilos;
+    private float height;
 
     public Person() {
     }
 
-    public Person(String name, long personId) {
-        this.name = name;
+    public Person(long personId, float height, float kilos, int age, String name) {
         this.personId = personId;
+        this.height = height;
+        this.kilos = kilos;
+        this.age = age;
+        this.name = name;
     }
 
     public long getPersonId() {
@@ -26,6 +32,30 @@ public class Person {
 
     public void setPersonId(long personId) {
         this.personId = personId;
+    }
+
+    public float getKilos() {
+        return kilos;
+    }
+
+    public void setKilos(float kilos) {
+        this.kilos = kilos;
+    }
+
+    public float getHeight() {
+        return height;
+    }
+
+    public void setHeight(float height) {
+        this.height = height;
+    }
+
+    public int getAge() {
+        return age;
+    }
+
+    public void setAge(int age) {
+        this.age = age;
     }
 
     public String getName() {
